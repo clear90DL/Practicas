@@ -1,7 +1,7 @@
 <?php
 session_start();
-$nombres = $_SESSION['nombres'] ?? 'Nombre no disponible';
-$dni = $_SESSION['dni'] ?? 'DNI no disponible';
+$nombres = $_SESSION['nombres'] = $_POST['txtNombres'];
+$dni = $_SESSION['dni'] = $_POST['txtDNI'];
 ?>
 <!DOCTYPE html>
 <html>

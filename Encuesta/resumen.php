@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['pregunta5'] = $_POST['preg5'];
+$_SESSION['Pregunta5'] = $_POST['preg5'] ?? $_SESSION['pregunta5'] ?? null;
 ?>
 <!DOCTYPE html>
 <html>
