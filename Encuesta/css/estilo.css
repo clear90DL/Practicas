@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body {
+     font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Imagen principal */
+#logo {
+       width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/* Estilo general del contenedor de tabla */
+#preguntas {
+    flex: 1; /* Esto hace que el contenido crezca y empuje el footer hacia abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenedor {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ACB6E5, #74ebd5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contenedor td,
+.contenedor th {
+    padding: 12px;
+    text-align: left;
+    border: none;
+}
+
+/* Pie de página */
+#pie {
+       background-color: rgb(106, 99, 99);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        padding: 15px;
+    }
+
+    .contenedor table {
+        font-size: 14px;
+    }
+
+    #logo {
+        max-height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor td,
+    .contenedor th {
+        display: block;
+        width: 100%;
+    }
+
+    .contenedor td label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .contenedor td input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,85 @@
+/* estilo.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #8A2BE2;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+#centrado {
+    text-align: center;
+}
+
+#titulo {
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    background: white;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table td {
+    padding: 15px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #5e169f;
+}
+
+img {
+    width: 150px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#ganadora {
+    background-color: #D8BFD8;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ccc;
+}

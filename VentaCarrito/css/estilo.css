@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Títulos centrados */
+#centrado {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Tabla principal */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Encabezados */
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* Celdas */
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Celdas especiales */
+#derecha {
+    text-align: right;
+}
+#resaltado {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+#totales {
+    text-align: right;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Imágenes */
+img {
+    border-radius: 5px;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Select y inputs */
+select, input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    input[type="submit"], select, input[type="text"] {
+        width: 100%;
+    }
+}

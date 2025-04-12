@@ -1,0 +1,84 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Fuente y color base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo tabla moderna */
+.menu-opciones {
+    width: 95%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.menu-opciones tr {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.menu-opciones tr:hover {
+    background-color: #f0f8ff;
+}
+
+.menu-opciones td {
+    padding: 20px 10px;
+    vertical-align: middle;
+}
+
+.menu-opciones img {
+    max-width: 60px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.menu-opciones tr:hover img {
+    transform: scale(1.1);
+}
+.menu-opciones td:last-child {
+    text-align: left; /* Alinea texto a la izquierda */
+}
+.menu-opciones a {
+    color: #1b83e0;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: left;
+}
+
+.menu-opciones a:hover {
+    color: #0e5fab;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}
