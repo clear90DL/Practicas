@@ -1,15 +1,20 @@
 /* estilo.css */
-
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background: #d9a7c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -32,6 +37,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
 
 table {
@@ -82,4 +88,58 @@ footer {
     font-size: 14px;
     color: #666;
     border-top: 1px solid #ccc;
+    
+}
+/*Responsive*/
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    header h2, header h3 {
+        font-size: 20px;
+    }
+
+    img {
+        width: 120px;
+        height: 150px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #ganadora {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    img {
+        width: 100px;
+        height: 130px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
 }

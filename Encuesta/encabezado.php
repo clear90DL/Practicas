@@ -27,7 +27,7 @@
 
 <body>
     <img src="img/imagen2.jpg" alt="Imagen representativa de la encuesta" width="100%" height="120px">
-    <h3>ENCUESTA DE INSEGURIDAD DEL CIUDADANO EN LA CIUDAD DEA
+    <h3>ENCUESTA DE INSEGURIDAD DEL CIUDADANO EN LA CIUDAD DE MEXICO
     </h3>
 </body>
 

@@ -87,7 +87,7 @@
             </tr>
         </table>
     </section>
-    <footer>
+    <footer id="pie">
         <h5 id="centrado">Todos los derechos reservados @2015
             Diseñado por M@nuel Torres</h5>
     </footer>
