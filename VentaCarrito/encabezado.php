@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/estilo3.css" rel="stylesheet">
     <style>
-    #centrado {
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+        #centrado {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    header img {
-        display: block;
-        margin: 10px auto;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    }
+        header img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 

@@ -62,55 +62,57 @@ if (!$bandera && $codigo !== '') {
 <head>
     <meta charset="UTF-8">
     <title>Carrito de Compras</title>
-    <link href="css/estilo2.css" rel="stylesheet">
+    <link href="css/estilo3.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <?php include('encabezado.php'); ?>
-    </header>
-    <section>
-        <table border="1" width="550" cellspacing="10" cellpadding="0">
-            <tr>
-                <td><img src="img/carrito.jpg" width="80" height="80" /></td>
-            </tr>
-            <tr>
-                <th>Código</th>
-                <th>Descripción</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-                <th>Subtotal</th>
-            </tr>
-            <?php
-            $tSubtotal = 0;
-            foreach ($_SESSION[$productos] as $cod => $cant) {
-                $precio = asignaPrecio($cod);
-                $descripcion = muestraDescripcion($cod);
-                $subtotal = $precio * $cant;
-                $tSubtotal += $subtotal;
-                ?>
+    <div class="wrapper">
+        <header>
+            <?php include('encabezado.php'); ?>
+        </header>
+        <section>
+            <table border="1" width="550" cellspacing="10" cellpadding="0">
                 <tr>
-                    <td id="centrado"><?php echo $cod; ?></td>
-                    <td><?php echo $descripcion; ?></td>
-                    <td id="derecha"><?php echo '$' . number_format($precio, 2); ?></td>
-                    <td id="centrado"><?php echo $cant; ?></td>
-                    <td id="derecha"><?php echo '$' . number_format($subtotal, 2); ?></td>
+                    <td><img src="img/carrito.jpg" width="80" height="80" /></td>
+                </tr>
+                <tr>
+                    <th>Código</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
                 </tr>
                 <?php
-            }
-            ?>
-            <tr>
-                <td id="resaltado">Total a Pagar</td>
-                <td colspan="3"></td>
-                <td id="totales"><?php echo '$' . number_format($tSubtotal, 2); ?></td>
-            </tr>
-            <tr>
-                <td colspan="4"><a href="index.php">Seguir comprando..!!</a></td>
-                <td><a href="destruir.php">Finalizar la compra</a></td>
-            </tr>
-        </table>
-    </section>
-    <footer>
+                $tSubtotal = 0;
+                foreach ($_SESSION[$productos] as $cod => $cant) {
+                    $precio = asignaPrecio($cod);
+                    $descripcion = muestraDescripcion($cod);
+                    $subtotal = $precio * $cant;
+                    $tSubtotal += $subtotal;
+                    ?>
+                    <tr>
+                        <td id="centrado"><?php echo $cod; ?></td>
+                        <td><?php echo $descripcion; ?></td>
+                        <td id="derecha"><?php echo '$' . number_format($precio, 2); ?></td>
+                        <td id="centrado"><?php echo $cant; ?></td>
+                        <td id="derecha"><?php echo '$' . number_format($subtotal, 2); ?></td>
+                    </tr>
+                    <?php
+                }
+                ?>
+                <tr>
+                    <td id="resaltado">Total a Pagar</td>
+                    <td colspan="3"></td>
+                    <td id="totales"><?php echo '$' . number_format($tSubtotal, 2); ?></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><a href="index.php">Seguir comprando..!!</a></td>
+                    <td><a href="destruir.php">Finalizar la compra</a></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <footer id="pie">
         <?php include('pie.php'); ?>
     </footer>
 </body>

@@ -5,20 +5,16 @@
     <meta charset="UTF-8">
     <title>Pie de página</title>
     <style>
-    footer {
-        text-align: center;
-        font-size: 0.9em;
-        color: #555;
-        padding: 10px 0;
-        margin-top: 20px;
-        border-top: 1px solid #ccc;
-    }
+        #text {
+            font-size: 15px;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
     <footer>
-        <h6>© 2015 Todos los derechos reservados | Lic. Manuel Torres</h6>
+        <h4 id="text">Todos los derechos reservados manueltorres@2015</h4>
     </footer>
 </body>
 

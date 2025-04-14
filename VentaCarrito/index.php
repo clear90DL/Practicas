@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Compra de productos</title>
-    <link href="css/estilo2.css" rel="stylesheet">
+    <link href="css/estilo3.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
