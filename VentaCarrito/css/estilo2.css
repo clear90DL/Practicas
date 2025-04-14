@@ -1,19 +1,24 @@
 /* Reset básico */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+html, body {
+    height: 100%;
 }
 
-/* Cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+      padding: 20px; 
 }
 
 /* Títulos centrados */
@@ -21,6 +26,8 @@ body {
     text-align: center;
     margin-bottom: 10px;
 }
+
+
 
 /* Tabla principal */
 table {
@@ -98,13 +105,12 @@ select, input[type="text"] {
 
 /* Footer */
 #pie {
-    background-color: red;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    background-color: grey; /* rojo Bootstrap */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
 }
 
 /* Responsive */

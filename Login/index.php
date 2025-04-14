@@ -44,7 +44,7 @@ if (isset($_SESSION['admin'])) {
             </form>
         </div>
         <div class="login-container">
-            <img src="icon/001-empleados.png" alt="imagen" with="200px" height="200px">
+            <img src="icon/001-empleados.png" alt="imagen" width="200px" height="200px">
         </div>
     </div>
 </body>

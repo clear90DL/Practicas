@@ -7,20 +7,9 @@
     <title>Document</title>
 
     <style>
-    /*#pie {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgb(106, 99, 99);
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding: 10px;
-
-    }*/
-    #text {
-        font-size: 15px;
-    }
+        #text {
+            font-size: 15px;
+        }
     </style>
 </head>
 

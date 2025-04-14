@@ -62,7 +62,7 @@ if (!$bandera && $codigo !== '') {
 <head>
     <meta charset="UTF-8">
     <title>Carrito de Compras</title>
-    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/estilo2.css" rel="stylesheet">
 </head>
 
 <body>
@@ -89,14 +89,14 @@ if (!$bandera && $codigo !== '') {
                 $subtotal = $precio * $cant;
                 $tSubtotal += $subtotal;
                 ?>
-            <tr>
-                <td id="centrado"><?php echo $cod; ?></td>
-                <td><?php echo $descripcion; ?></td>
-                <td id="derecha"><?php echo '$' . number_format($precio, 2); ?></td>
-                <td id="centrado"><?php echo $cant; ?></td>
-                <td id="derecha"><?php echo '$' . number_format($subtotal, 2); ?></td>
-            </tr>
-            <?php
+                <tr>
+                    <td id="centrado"><?php echo $cod; ?></td>
+                    <td><?php echo $descripcion; ?></td>
+                    <td id="derecha"><?php echo '$' . number_format($precio, 2); ?></td>
+                    <td id="centrado"><?php echo $cant; ?></td>
+                    <td id="derecha"><?php echo '$' . number_format($subtotal, 2); ?></td>
+                </tr>
+                <?php
             }
             ?>
             <tr>

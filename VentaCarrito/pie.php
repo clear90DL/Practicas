@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link href="css/estilo.css" rel="stylesheet">
+
+    <style>
+        #text {
+            font-size: 15px;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <footer>
-        <h6 id="centrado">Todos los derechos reservados © 2015<br>
-            Lic. Manuel Torres</h6>
+        <h4 id="text">Todos los derechos reservados manueltorres@2015</h4>
     </footer>
 </body>
 
